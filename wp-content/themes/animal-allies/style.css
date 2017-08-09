@@ -1,0 +1,752 @@
+/*
+Theme Name: Animal Allies
+Theme URI:
+Author: Capstone Project
+Author URI:
+Description: Description
+Version: 18 April 2017
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: animal-allies
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Animal Allies is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
+*/
+
+
+
+#sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+#sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
+#sortable li span { position: absolute; margin-left: -1.3em; }
+
+.column-from { width:20%; }
+
+#contactForm > button { margin-top: 0.5em;}
+#gcaptcha-help > ul { color: #a94442; margin-top: 0.5em; }
+div#sending_message { visibility: hidden;}
+
+/* featured image margin for custom pages  */
+body > div > main > div.row.featured-image > div > img { margin-bottom: 1.5em;}
+
+
+/*======================================================================*\
+ *                                                             MENU STYLE
+\*======================================================================*/
+/*------------------------------NAVBUTTONDEFAULT--------------------------------*/
+li.navBtnLi{
+    border-bottom:		0 solid transparent;
+    text-align:			center;
+    color: #000000;
+}
+
+a.navBtnAnchor{
+    color:				#FF3333;
+    padding:			10px;
+    text-decoration : none;
+}
+
+span.navBtnLabel{
+    color:				#000000;
+   /* font-size: 1.1em;*/
+}
+i.navBtnIcon{
+    color:				#000000
+}
+
+i.navBtnRing{
+    color:				#000000;
+    opacity:            0.0;
+}
+
+i.navBtnCircle{
+    color:				#000000;
+    opacity:			0.0;
+}
+/*----------------------------------------------------- NAVBUTTON HOVER */
+li.navBtnLi:hover{
+    border-bottom:		0 solid #FFFFFF;}
+
+li.navBtnLi:hover>a>span>i.navBtnRing{
+    color:				#000000;
+    opacity:			1.0;
+}
+
+li.navBtnLi:hover>a>span>i.navBtnIcon{
+    color:				#000000;
+    opacity:			1.0;
+}
+
+li.navBtnLi:hover>a>span.navBtnLabel{
+    color:				#000000;
+    opacity:			1.0;
+}
+
+/*------------------------------------------------ NAVBUTTON "THISPAGE" */
+li.navBtnLiThisPage{
+    border-bottom:		0 solid #FF3333 !important;
+}
+
+a.navBtnAnchorThisPage{
+    color:				#8B171A !important;
+    padding:			10px;
+}
+
+span.navBtnLabelThisPage{
+    color:				#8B171A !important;
+}
+
+i.navBtnIconThisPage{
+    color:				#FFFFFF!important;
+}
+
+i.navBtnRingThisPage{
+    color:				#8B171A!important;
+    opacity:			1.0;
+}
+
+i.navBtnCircleThisPage{
+    color:				#8B171A!important;
+    opacity:			1.0;
+}
+
+/*------------------------------ MISELLANEOUS ----------------------------*/
+
+div.contactRow{
+    padding:			8px;
+}
+
+.navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus {
+    background-color: transparent;
+}
+
+nav li { line-height: 1.0em; font-size: 1.0em;}
+
+/*------------------------------ CONTACT INFO ROW FLEXBOX ----------------------------*/
+
+div.contactInfoFlexboxContainer{
+
+}
+
+div.contactRowFlexboxContainer{
+    display:			flex;
+    flex-direction:		row;
+    flex-wrap:			nowrap;
+    justify-content:	flex-start;
+    align-content:		flex-start;
+    align-items:        center;
+    padding-left:		25px;
+    font-family:        "Open Sans", sans-serif;
+}
+
+div.contactRowFlexboxItems{
+
+}
+
+div.contactRowFlexboxIcon{
+    order:				1;
+    min-width:			50px;
+}
+
+div.contactRowFlexboxLabel{
+    order:				2;
+    flex-shrink:		1;
+}
+
+/*------------------------------ CONTACT INFO ROW FLEXBOX ----------------------------*/
+
+div.serviceBlock{
+    display:			flex;
+    flex-direction:		row;
+    flex-wrap:			nowrap;
+    justify-content:	flex-start;
+    align-items:		center;
+}
+
+div.serviceBlockIcon{
+    width:				60px;
+}
+
+div.serviceBlockName{
+    flex:				1;
+}
+
+div.serviceBlockCost{
+    color:				#0a0;
+    font-weight:		bold;
+}
+
+/*------------------------------------------------------- default styles --*/
+
+.wideSection     { padding: 50px 0; }
+.lightGreyBG     { background-color: #eee; color: #000; }
+.veryLightGreyBG { background-color: #e6e6e6; color: #000; }
+.whiteBG         { background-color: #FFFFFF; color: #000; }
+.titleSection { background-color: #8B171A; color: #fff; }
+.sectionWhite { background-color: #FFFFFF; color: #000; padding: 30px 0; }
+.mainContent  { padding: 30px 0; background-color: #e7e7e7}
+
+/* main section link colors */
+main a { color: #bb171a; }
+main a:hover { color: #8b171a;}
+.contactSocialIcons a { color: #8b171a; }
+.featuredImage {}
+h1.page-header {
+    font-family: "Roboto", sans-serif; border: 0;
+    margin: 30px 0 30px;
+    padding: 0;
+    font-weight: bold;
+    font-size: 3.0em;
+}
+
+.wideSection h2 { margin-top: 20px; border: none; }
+
+#contactHead { font-family: "Roboto", sans-serif; border: 0;}
+
+h2 { font-family: "Roboto", sans-serif; font-size: 2.2em; border: 0;}
+h3 { font-family: "Open Sans", sans-serif; font-size: 1.2em; line-height: 1.5em;}
+p, address, li { font-family: "Open Sans", sans-serif; font-size: 1.2em; line-height: 1.5em;}
+
+
+/*-- services page --*/
+.serviceFlex { display: flex;  align-content: center;}
+.serviceItemName { font-family: "Roboto", sans-serif; }
+.serviceItemPrice { font-size: 1.0em;}
+
+/*-- donate page and staff page --*/
+
+.supplyName, .staffName { font-family: "Roboto", sans-serif; }
+.supplyDescription, .staffPosition { font-size: 1.0em;}
+.supplyQuantity { font-size: 1.0em; }
+.supplyStatus { font-size: 1.0em; }
+
+/*-- contact page --*/
+.contactPageAddress, .contactPagePhone, .contactPageEmail, .contactPageHours { font-size: 1.0em;}
+#contactHead{ font-size: 1.6em;}
+
+
+/*-- footer --*/
+/*--- footer stuff ---*/
+footer { background-color: #2f2f2f; /* 2f2f2f */
+    min-height: 300px;
+    width: 100%;
+    clear: both;
+    padding-top: 20px;
+    margin: 0;
+    color : #9C9C9C; /* old color: #939393 */
+
+}
+footer .container {
+    /* background: url('img/footer-bg3.png') no-repeat center bottom; */
+}
+footer a { color: #ccc;}
+footer a:hover { color: #fff;}
+/* affiliate icons */
+footer #affiliatesFlex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+footer #guidestar { margin-left: 10px; }
+footer #iGiveImage { margin-top: 10px;}
+footer #affiliatesFlexCol2 {
+    display: flex;
+    flex-direction: column;
+    width: 105px;
+
+
+}
+
+
+footer p, footer address { line-height: 1.0em; font-size: 1.0em; color: #ccc;}
+footer .copyright {clear:both; margin-bottom: 20px;}
+footer #copyrighFlex { display: flex;  justify-content: flex-start; align-items: center;}
+
+
+/*------------------------------------------------------------ home page --*/
+.homeSubtitle { font-family: "Open Sans", sans-serif; }
+p.homeSubtitle {  font-family: "Roboto", sans-serif; font-size: 1.4em; margin: 40px 60px 20px 60px; text-align: justify; }
+.ourStatistics p {  font-family: "Roboto", sans-serif; font-size: 3.0em;}
+.ourStatistics p { padding: 10px 0;}
+
+
+.ourMission h2 { font-weight: bold; }
+.ourMission p { font-family: "Open Sans", sans-serif; font-size: 1.3em; line-height: 1.5em;}
+/*.ourMission { display: flex; flex-direction: column; justify-content: center; }*/
+
+.flex1 { flex: 1}
+
+body { padding: 0; }
+main {
+    min-height: calc(100vh - 414px);
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*---------------------------------------------------- nav -----------*/
+#navButton { margin-top: 20px; padding: 13px; background-color: #8b171a;}
+#navButton span.icon-bar { background-color: white;}
+
+
+
+
+#theNav { min-height: 102px; background-color: #FFFFFF; margin-bottom: 0;}
+
+
+/**
+ * These media queries are the same break points for bootstrap
+ */
+
+/*-- Bootstrap extra small 'xs' size designed for phones */
+@media (max-width: 767px) {
+    /*================================================ SITE WIDE STYLES */
+    h1.page-header { margin: 20px 0;}
+    .featuredImage { margin-bottom: 20px;}
+
+
+    /* sticky footer fill content */
+    main { min-height: calc(100vh - 704px); }
+    .wideSection{ padding: 20px 0;}           /* each section */
+    .wideSection h2:nth-child(1) { margin-top: 10px; }
+    .page-header{ margin: 20px 0 20px;}       /* page title red bar */
+
+    /*========================================================= NAV BAR */
+
+    #navbar {  padding: 0;  background-color: #fff;  font-size: 1.1em; }
+    /* nav drop down button */
+    #navButton { float: right;}
+
+    /* nav drop down styling */
+    #menu-site-navigation li:hover { background-color: #ddd; }
+    #menu-site-navigation li { border-top: 1px solid #eee; }
+    #menu-site-navigation li:nth-child(1) { border: none; }
+    li.navBtnLiThisPage{ background-color: #eee; }
+    #menu-site-navigation { margin: -1px 0 0 0;}
+    #menu-site-navigation a { padding: 5px 0; text-align: left;}
+    #menu-site-navigation span.fa-stack {display: inline-block; width: 50px;}
+
+    /* top non-expanding portin of nav */
+    #navbarHeader {padding: 5px 5px; height: 102px; }
+
+    /* <a> box for logo */
+    #navLogoLink {
+        display: inline-block;
+        float: left;
+        margin-left: auto;
+        margin-top: 10px;
+        padding: 0;
+        background-image: url('img/logo-normal-with-text.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 220px;
+        height: 71px;
+    }
+
+    /*========================================================== FOOTER */
+    footer {height: 600px;}
+    footer .copyright { padding-top: 45px;}
+    footer h4 { margin-top: 15px;}
+    footer .container {background-image: none;}
+
+
+    /*======================================================= HOME PAGE */
+
+    /* carousel */
+    #myCarousel  img { max-width: 100%; max-height: 100%; }
+    #carouselDots { display: none}
+
+    /* text under carousel */
+    p.homeSubtitle {
+        font-family: "Open Sans", sans-serif;
+        margin: 15px 0;
+        font-size: 1.3em;
+        line-height: 1.5em;
+        text-align: left;
+    }
+
+    /* surgery statistics text */
+    .ourStatistics p { font-size: 2em; line-height: 1.4em;}
+
+    /*=================================================== SERVICES PAGE */
+    .servicesInfo p { margin-bottom: 50px;}
+
+    /*===================================================== DONATE PAGE */
+    #donateThankYouTitle { font-family: "Roboto", sans-serif; font-weight: bold; font-size: 2.3em; }
+    #donateThankYouDescription { font-size: 1.3em;}
+
+    /*======================================================== FAQ PAGE */
+    .faqHelp { margin-bottom: 30px; font-size: 1.1em;}
+
+    /*====================================================== STAFF PAGE */
+    .staffName {}
+
+    /*=====================================================CONTACT PAGE */
+    .contactPagePhone, .contactPageEmail, .contactPageHours { margin-left: 15px;}
+    .contactSocialIcons {margin-left: 5px;}
+
+
+
+
+
+
+
+
+
+}
+
+/* bootstrap 'sm' size, intended for tablets  */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /*================================================ SITE WIDE STYLES */
+    .featuredImage { margin-bottom: 20px;}
+
+
+    /*--------------------------------------- sticky footer fill content --*/
+
+
+    /*---------- make nav show as collapsed dropdown menu bootstrap style --*/
+    .navbar-header { float: none; }
+    .navbar-toggle { display: block; }
+    .navbar-collapse { border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top { top: 0; border-width: 0 0 1px;}
+    .navbar-collapse.collapse {display: none!important;}
+    .navbar-nav { float: none!important; margin-top: 7px;}
+    .navbar-nav > li {float: none;}
+    .navbar-nav > li > a { padding-top: 10px; padding-bottom: 10px;}
+    .collapse.in{ display: block!important;}
+
+
+    /*---------------------------------------------------- nav -----------*/
+
+    #navButton span.icon-bar { background-color: white;}
+    #navButton { margin-top: 30px;}
+    #navbar {
+
+        padding: 0;
+
+        font-size: 1.1em;
+
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    #menu-site-navigation li:hover { background-color: #ddd; }
+    #menu-site-navigation li { border-top: 1px solid #eee; }
+    #menu-site-navigation li:nth-child(1)    {border: none;}
+    #menu-site-navigation { margin: -1px 0 0 0;}
+    #menu-site-navigation a { padding: 5px 0; text-align: left;}
+
+    #menu-site-navigation span.fa-stack {display: inline-block; width: 50px;}
+
+    #navbarHeader {padding: 5px 5px;}
+    li.navBtnLiThisPage{ background-color: #eee; }
+
+
+    .navbar-brand > img {  max-width: 300%;  max-height: 300%;
+        object-fit: contain;
+        margin-top: -10px;
+    }
+
+    #navLogoLink {
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        margin-left: auto;
+        padding: 0;
+
+        background-image: url('img/logo-normal-with-text.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 314px;
+        height: 102px;
+        float: left;
+    }
+
+
+    /*======================================================= HOME PAGE */
+
+    /*-- carousel --*/
+    #myCarousel  img {  max-height: 189px;}
+    #carouselDots { display: none;}
+
+    /* text under carousel */
+    p.homeSubtitle {
+        font-family: "Open Sans", sans-serif;
+        margin: 30px 0 0 0;
+        font-size: 1.3em;
+        line-height: 1.5em;
+        text-align: left;
+    }
+
+    /* surgery statistics text */
+    .ourStatistics p { font-size: 2.2em; line-height: 1.4em;}
+
+    .ourMission { margin-top: -30px;}
+
+
+    /*=================================================== SERVICES PAGE */
+    .servicesInfo p { margin-bottom: 30px;}
+
+    /*===================================================== DONATE PAGE */
+    #donateThankYouTitle { font-family: "Roboto", sans-serif; font-weight: bold; font-size: 2.5em; }
+    #donateThankYouDescription { font-size: 1.5em;}
+
+    /*======================================================== FAQ PAGE */
+    .faqHelp { margin-bottom: 30px; margin-top: 10px; font-size: 1.2em;}
+
+    /*=====================================================CONTACT PAGE */
+    .contactPagePhone, .contactPageEmail, .contactPageHours { margin-left: 15px;}
+    .contactSocialIcons {margin-left: 5px;}
+}
+
+
+@media (min-width: 992px) {
+    /*-- sitewide stuff --*/
+    .featuredImage { margin-bottom: 20px;}
+
+    /* the <nav> element */
+    /* the <div> container inside <nav> */
+    #navContainer {
+        height: 102px;
+        display: flex;
+        align-items: center;
+        margin-top:5px;
+        margin-bottom: 5px;
+    }
+
+
+
+    /* the button to collapse or expand the menu */
+    #navButton { margin-top: 13px; padding: 20px; background-color: #8b171a;}
+    #navButton span.icon-bar { background-color: white;}
+
+    #bs-example-navbar-collapse-1 {
+        margin-top: 6px;
+    }
+
+    /* the logo <img> */
+    #navLogo {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+
+    .navbar-brand{ clear: both; }
+    .navbar-brand > img {
+        object-fit: contain;
+    }
+
+    #navbarHeader { object-fit: contain; margin: 10px; min-width: 121px;}
+
+    /* bar which holds <ul> */
+    #navbar { width: 100%;}
+
+    /* padding around each nav element link */
+    .nav > li > a { padding: 8px;}
+    .navBtnLabel { margin-left: -1px;}
+
+    /* the <a> around the logo image */
+    #navLogoLink {
+
+        clear: both;
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        margin-left: auto;
+        padding: 0;
+
+        background-image: url('img/logo-normal.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 112px;
+        height: 102px;
+    }
+
+
+    /*======================================================= HOME PAGE */
+
+    /*-- carousel --*/
+    #myCarousel  img {  max-height: 247px;}
+
+    /* text under carousel */
+    p.homeSubtitle {
+        font-family: "Open Sans", sans-serif;
+        margin: 30px 0 0 0;
+        font-size: 1.3em;
+        line-height: 1.5em;
+        text-align: left;
+    }
+
+    /* surgery statistics text */
+    .ourStatistics p { font-size: 2.8em; line-height: 1.4em;}
+    .ourMission { margin-top: 20px;}
+
+    /*=================================================== SERVICES PAGE */
+    .servicesInfo p { margin-bottom: 30px; margin-top: -10px;}
+
+    /*===================================================== DONATE PAGE */
+    #donateThankYouTitle { font-family: "Roboto", sans-serif; font-weight: bold; font-size: 4.0em; }
+    #donateThankYouDescription { font-size: 1.5em;}
+
+    /*======================================================== FAQ PAGE */
+    .faqHelp { margin-bottom: 30px; margin-top: 10px; font-size: 1.2em;}
+
+    .staffPanelInfo { height: 100%;}
+
+    /*=====================================================CONTACT PAGE */
+    .contactPagePhone, .contactPageEmail, .contactPageHours { margin-left: 15px;}
+    .contactSocialIcons {margin-left: 5px;}
+}
+
+@media (min-width: 1200px) {
+    /*------------------------------------------------- nav stuff -------*/
+
+    /* the <nav> element */
+    /* the <div> container inside <nav> */
+    #navContainer {
+        height: 102px;
+        display: flex;
+        align-items: center;
+        margin-top:5px;
+        margin-bottom: 5px;
+    }
+
+    /* the button to collapse or expand the menu */
+    #navButton { margin-top: 13px; padding: 20px; background-color: #8b171a;}
+    #navButton span.icon-bar { background-color: white;}
+
+
+    #bs-example-navbar-collapse-1 {
+        margin-top: 6px;
+    }
+
+    /* the logo <img> */
+    #navLogo {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+
+    .navbar-brand{ clear: both; }
+    .navbar-brand > img {
+        object-fit: contain;
+    }
+
+    #navbarHeader { width: 315px; object-fit: contain; margin: 10px;  min-width: 325px;}
+    /* the <a> around the logo image */
+    #navLogoLink {
+
+        clear: both;
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        margin-left: auto;
+        padding: 0;
+
+        background-image: url('img/logo-normal-with-text.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 314px;
+        height: 102px;
+    }
+
+    /* bar which holds <ul> */
+    #navbar { width: 100%;}
+
+    /* padding around each nav element link */
+    .nav > li > a { padding: 8px;}
+    .navBtnLabel { margin-left: -1px;}
+
+
+    /*======================================================= HOME PAGE */
+
+
+    /* text under carousel */
+    p.homeSubtitle {
+        font-family: "Open Sans", sans-serif;
+        margin: 40px 0 0 0;
+        font-size: 1.5em;
+        line-height: 1.5em;
+        text-align: left;
+    }
+
+    /* surgery statistics text */
+    .ourStatistics p { margin-top: 60px; font-size: 2.8em; line-height: 1.0em;}
+    .ourMission { margin-top: 40px;}
+
+
+
+    /*-- carousel --*/
+    #myCarousel  img { height: 300px; max-width: 1140px; min-height: 300px;}
+}
+
+
+/*===================================================== SPONSORS PAGE */
+
+.aaSponsors {
+    height: 600px;
+    max-height: 600px;
+    padding-top: 10px;
+}
+
+.aaSponsors p {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* w3-animate */
+.slideBanner {
+    height: 185px;
+}
+
+.slideShow1, .slideShow2, .slideShow3, .slideShow4{
+    display:none;
+    height: 185px;
+}
+
+.w3-animate-top {
+    position:relative;
+    animation:animatetop 1s;
+}
+
+@keyframes animatetop {
+    from {
+      top:-300px;
+      opacity:0
+    } to {
+        top:0;
+        opacity:1
+    }
+}
+
+.w3-animate-bottom {
+    position:relative;
+    animation:animatebottom 1s;
+}
+
+@keyframes animatebottom {
+    from {
+        bottom:-300px;
+        opacity:0
+    } to {
+        bottom:0;
+        opacity:1
+    }
+}
+
+/**
+.panel-title { font-family: "Roboto", sans-serif;}
+p, .panel-body { font-family: "Open Sans", sans-serif; font-size: 1.2em; line-height: 1.5em;}
+**/
