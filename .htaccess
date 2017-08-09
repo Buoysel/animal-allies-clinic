@@ -1,0 +1,16 @@
+#Please Note: Optimized WordPress is a Managed Platform offering, and this file has been configured to work under this managed platform. Changes to this file are not recommended and may impact our ability to provide support for your WordPress site.##
+
+# BEGIN WPSuperCache
+# END WPSuperCache
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
